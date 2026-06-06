@@ -20,8 +20,8 @@ Reproduce: `make install && make bench`.
 ```mermaid
 flowchart LR
   A[Instance: files + failing_test] --> B[BM25 file localization]
-  B --> C[Minimal-edit policy\n(replace bug -> fix)]
-  C --> D[Patch validator\n(apply + recheck failing test)]
+  B --> C["Minimal-edit policy\n(replace bug -> fix)"]
+  C --> D["Patch validator\n(apply + recheck failing test)"]
   D --> E[5 chart families + summary.json]
 ```
 

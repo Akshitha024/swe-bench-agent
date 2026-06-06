@@ -1,0 +1,22 @@
+..........                                                               [100%]
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.13.3-final-0 _______________
+
+Name                            Stmts   Miss  Cover
+---------------------------------------------------
+src/sba/__init__.py                 1      0   100%
+src/sba/agent/__init__.py           0      0   100%
+src/sba/agent/policy.py            15      0   100%
+src/sba/cli/__init__.py             0      0   100%
+src/sba/cli/main.py                17     17     0%
+src/sba/runner.py                  26      0   100%
+src/sba/tasks/__init__.py           0      0   100%
+src/sba/tasks/synthetic.py         17      0   100%
+src/sba/types.py                   20      0   100%
+src/sba/validator/__init__.py       0      0   100%
+src/sba/validator/check.py         14      1    93%
+src/sba/viz/__init__.py             0      0   100%
+src/sba/viz/charts.py              70      0   100%
+---------------------------------------------------
+TOTAL                             180     18    90%
+10 passed in 0.83s

@@ -1,0 +1,21 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.3, pytest-9.0.3, pluggy-1.6.0 -- /Users/mani/Projects/akshitha-portfolio/projects/swe-bench-agent/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/mani/Projects/akshitha-portfolio/projects/swe-bench-agent
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0
+collecting ... collected 10 items
+
+tests/test_agent.py::test_minimal_edit_picks_file_with_bug PASSED        [ 10%]
+tests/test_agent.py::test_confused_policy_picks_first_file PASSED        [ 20%]
+tests/test_agent.py::test_minimal_edit_patch_uses_fix_token PASSED       [ 30%]
+tests/test_runner.py::test_runner_minimal_edit PASSED                    [ 40%]
+tests/test_runner.py::test_runner_confused_policy PASSED                 [ 50%]
+tests/test_tasks.py::test_count PASSED                                   [ 60%]
+tests/test_tasks.py::test_each_instance_has_at_least_two_files PASSED    [ 70%]
+tests/test_tasks.py::test_bug_token_unique_to_one_file PASSED            [ 80%]
+tests/test_validator.py::test_minimal_edit_passes_validation PASSED      [ 90%]
+tests/test_validator.py::test_confused_patch_fails_validation PASSED     [100%]
+
+============================== 10 passed in 0.59s ==============================

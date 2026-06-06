@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: swe-bench-agent
+message: "SWE-Bench-Lite focused minimal-edit agent with repo-aware retrieval + patch validator."
+authors:
+  - family-names: "Lingampally"
+    given-names: "Akshitha Reddy"
+date-released: "2024-12-05"
+version: "0.3.0"
+license: "MIT"
+url: "https://github.com/Akshitha024/swe-bench-agent"
+keywords:
+  - "swe-bench"
+  - "patch-generation"
+  - "agent"

@@ -1,0 +1,51 @@
+[project]
+name = "swe-bench-agent"
+version = "0.3.0"
+description = "SWE-Bench-Lite focused agent: minimal-edit policy, repo-aware retrieval, patch validator, per-instance success + per-repo accuracy plots"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Akshitha Reddy Lingampally" }]
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "typer>=0.9",
+    "rich>=13.7",
+    "pydantic>=2.5",
+    "rank-bm25>=0.2.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+    "mypy>=1.8",
+]
+
+[project.scripts]
+sba = "sba.cli.main:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sba"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF", "TID", "PT"]
+ignore = ["B008"]
+
+[tool.mypy]
+strict = true
+python_version = "3.11"
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
